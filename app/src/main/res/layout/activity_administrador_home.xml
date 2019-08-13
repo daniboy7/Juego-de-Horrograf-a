@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal"
+    tools:context=".AdministradorHome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_margin="20dp"
+        android:text="Horrografía"
+        android:textAlignment="center"
+        android:textColor="#FFFF00"
+        android:background="@drawable/panel"
+        app:fontFamily="@font/luckiest_guy"
+        />
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido administrador:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:fontFamily="@font/luckiest_guy"/>
+
+    <Button
+        android:id="@+id/btnNivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear nivel"
+        android:textColor="#800000"
+        android:background="@drawable/boton1"
+        android:textAlignment="center"
+
+        android:fontFamily="@font/luckiest_guy"
+        />
+
+    <Button
+        android:id="@+id/btnEtapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear etapa"
+        android:textColor="#800000"
+        android:background="@drawable/boton1"
+        android:textAlignment="center"
+
+        android:fontFamily="@font/luckiest_guy"
+        />
+
+    <Button
+        android:id="@+id/btnItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear item"
+        android:textColor="#800000"
+        android:background="@drawable/boton1"
+        android:textAlignment="center"
+        android:fontFamily="@font/luckiest_guy"
+        />
+
+    <Button
+        android:id="@+id/btnRegistroAdministrador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar administrador"
+        android:textColor="#800000"
+        android:background="@drawable/boton1"
+        android:textAlignment="center"
+
+        android:fontFamily="@font/luckiest_guy"
+        />
+
+    <Button
+        android:id="@+id/btnEstadisticas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estadísticas"
+        android:textColor="#800000"
+        android:background="@drawable/boton1"
+        android:textAlignment="center"
+
+        android:fontFamily="@font/luckiest_guy"
+        />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:background="@drawable/boton3"
+        android:textAlignment="center"
+
+        android:fontFamily="@font/luckiest_guy"
+        android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

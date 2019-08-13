@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal"
+    tools:context=".Juego">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:text="Nivel 1 Palabras"
+                android:background="@drawable/boton2"
+                app:fontFamily="@font/luckiest_guy"
+                android:textColor="#000000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iconoPuntuacion"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/completo"
+                    android:layout_alignBottom ="@+id/puntuacion"
+                    />
+
+                <TextView
+                    android:id="@+id/puntuacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_margin="20dp"
+                    android:layout_toRightOf="@+id/iconoPuntuacion"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/iconoErrores"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/errores"
+                    android:layout_alignLeft ="@+id/errores"
+                    />
+
+                <TextView
+                    android:id="@+id/errores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_margin="20dp"
+                    android:layout_toRightOf="@+id/iconoErrores"
+                    />
+
+                <ImageView
+                    android:id="@+id/iconoReloj"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/reloj"
+                    android:layout_alignLeft ="@+id/tiempo"
+                    />
+
+                <TextView
+                    android:id="@+id/tiempo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 : 00"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_margin="20dp"
+                    android:layout_toRightOf="@+id/iconoPuntuacion"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                >
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:text="Etapa 1"
+                android:background="@drawable/boton1"
+                app:fontFamily="@font/luckiest_guy"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/textoItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:text="varco"
+                android:background="@drawable/board_item"
+                app:fontFamily="@font/luckiest_guy"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ok"
+                android:layout_marginLeft="100dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

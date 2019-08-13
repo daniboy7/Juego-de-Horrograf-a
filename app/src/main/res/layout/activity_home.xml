@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal"
+    tools:context=".Home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_margin="20dp"
+        android:text="Horrografía"
+        android:textAlignment="center"
+        android:textColor="#FFFF00"
+        android:background="@drawable/panel"
+        app:fontFamily="@font/luckiest_guy"
+        />
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Bienvenido usuario:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:fontFamily="@font/luckiest_guy" />
+
+    <Button
+        android:id="@+id/btnJugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jugar"
+        android:textColor="#800000"
+        android:background="@drawable/boton1"
+        android:textAlignment="center"
+        android:layout_margin="24dp"
+        android:fontFamily="@font/luckiest_guy"
+        />
+    <Button
+        android:id="@+id/btnSaber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:text="Saber más"
+        android:background="@drawable/boton2"
+        android:textAlignment="center"
+        android:layout_margin="24dp"
+        android:fontFamily="@font/luckiest_guy"/>
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:background="@drawable/boton3"
+        android:textAlignment="center"
+        android:layout_margin="24dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:textColor="#000000"/>
+
+
+
+
+</LinearLayout>

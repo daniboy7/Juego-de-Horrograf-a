@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal"
+    tools:context=".CrearItem">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear item"
+                android:textSize="20dp"
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                app:fontFamily="@font/luckiest_guy"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese la frase :"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/luckiest_guy"
+                />
+            <EditText
+                android:id="@+id/frase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese la frase correcta :"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/luckiest_guy"
+                />
+            <EditText
+                android:id="@+id/fraseCorrecta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                />
+
+            <TextView
+                android:id="@+id/tvnivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione el nivel:"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/luckiest_guy"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:id="@+id/spNivel"
+                ></Spinner>
+
+            <TextView
+                android:id="@+id/tvetapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione la etapa:"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/luckiest_guy"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:id="@+id/spEtapa"
+                ></Spinner>
+
+            <Button
+                android:id="@+id/btnCrearItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear"
+                android:fontFamily="@font/luckiest_guy"
+                android:background="@drawable/boton1"
+                android:textAlignment="center"
+                android:textColor="#800000"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

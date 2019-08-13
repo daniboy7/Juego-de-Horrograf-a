@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal"
+    tools:context=".Etapa">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar etapa"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        app:fontFamily="@font/luckiest_guy"
+        android:textColor="#FFFFFF"
+        />
+    <EditText
+        android:id="@+id/descripcionEtapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luckiest_guy"
+        android:hint="Descripción" />
+
+    <EditText
+        android:id="@+id/valorError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luckiest_guy"
+        android:hint="Valor de error"
+        android:inputType="numberDecimal"
+         />
+
+    <EditText
+        android:id="@+id/valorPuntuacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luckiest_guy"
+        android:hint="Valor de puntuación"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/erroresNoPermitidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luckiest_guy"
+        android:hint="Número de errores no permitidos"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/minutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luckiest_guy"
+        android:hint="Minutos"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnRegistroEtapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar etapa"
+        android:fontFamily="@font/luckiest_guy"
+        android:background="@drawable/boton1"
+        android:textAlignment="center"
+        android:textColor="#800000"
+        />
+
+
+
+</LinearLayout>
