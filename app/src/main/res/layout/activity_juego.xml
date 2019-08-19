@@ -19,12 +19,13 @@
             >
 
             <TextView
+                android:id="@+id/textviewNivel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:textAlignment="gravity"
                 android:gravity="center"
-                android:text="Nivel 1 Palabras"
+                android:text=""
                 android:background="@drawable/boton2"
                 app:fontFamily="@font/luckiest_guy"
                 android:textColor="#000000"
@@ -51,30 +52,13 @@
                     android:fontFamily="@font/luckiest_guy"
                     android:textColor="#000000"
                     android:textSize="20dp"
-                    android:layout_margin="20dp"
                     android:layout_toRightOf="@+id/iconoPuntuacion"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="80dp"
                     />
 
-
-                <ImageView
-                    android:id="@+id/iconoErrores"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/errores"
-                    android:layout_alignLeft ="@+id/errores"
-                    />
-
-                <TextView
-                    android:id="@+id/errores"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:fontFamily="@font/luckiest_guy"
-                    android:textColor="#000000"
-                    android:textSize="20dp"
-                    android:layout_margin="20dp"
-                    android:layout_toRightOf="@+id/iconoErrores"
-                    />
 
                 <ImageView
                     android:id="@+id/iconoReloj"
@@ -88,7 +72,7 @@
                     android:id="@+id/tiempo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0 : 00"
+                    android:text=""
                     android:fontFamily="@font/luckiest_guy"
                     android:textColor="#000000"
                     android:textSize="20dp"
@@ -96,7 +80,47 @@
                     android:layout_toRightOf="@+id/iconoPuntuacion"
                     />
 
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconoErrores"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/errores"
+                    android:layout_alignLeft ="@+id/errores"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/errores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/iconoErrores"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="100dp"
+                    />
+
+                <TextView
+                    android:id="@+id/itemCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/luckiest_guy"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/iconoErrores"
+                    android:layout_margin="20dp"
+                    />
 
             </LinearLayout>
 
@@ -110,12 +134,13 @@
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/textviewEtapa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:textAlignment="gravity"
                 android:gravity="center"
-                android:text="Etapa 1"
+                android:text=""
                 android:background="@drawable/boton1"
                 app:fontFamily="@font/luckiest_guy"
                 android:textColor="#000000"
@@ -128,18 +153,29 @@
                 android:layout_margin="5dp"
                 android:textAlignment="gravity"
                 android:gravity="center"
-                android:text="varco"
+                android:text=""
                 android:background="@drawable/board_item"
                 app:fontFamily="@font/luckiest_guy"
                 android:textColor="#000000"
                 />
 
+            <EditText
+                android:id="@+id/textoRespuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                />
+
             <Button
-                android:id="@+id/btnOk"
+                android:id="@+id/btnConfirmNext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ok"
-                android:layout_marginLeft="100dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/boton1"
+                app:fontFamily="@font/luckiest_guy"
+                android:text="Confirmar"
+                android:textColor="#800000"
                 />
 
 

@@ -21,6 +21,38 @@ public class Etapas {
         this.minutos = minutos;
     }
 
+    public Double getValor_error() {
+        return valor_error;
+    }
+
+    public void setValor_error(Double valor_error) {
+        this.valor_error = valor_error;
+    }
+
+    public Double getValor_puntuacion() {
+        return valor_puntuacion;
+    }
+
+    public void setValor_puntuacion(Double valor_puntuacion) {
+        this.valor_puntuacion = valor_puntuacion;
+    }
+
+    public int getErrores_no_permitidos() {
+        return errores_no_permitidos;
+    }
+
+    public void setErrores_no_permitidos(int errores_no_permitidos) {
+        this.errores_no_permitidos = errores_no_permitidos;
+    }
+
+    public int getMinutos() {
+        return minutos;
+    }
+
+    public void setMinutos(int minutos) {
+        this.minutos = minutos;
+    }
+
     public void setId(int id) {
         this.id = id;
     }

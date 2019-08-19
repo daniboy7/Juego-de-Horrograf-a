@@ -39,5 +39,15 @@ public class Home extends AppCompatActivity {
                 Home.this.finish();
             }
         });
+
+        Button saber = findViewById(R.id.btnSaber);
+        saber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentSaber = new Intent(Home.this, Escenario.class);
+                Home.this.startActivity(intentSaber);
+                Home.this.finish();
+            }
+        });
     }
 }
