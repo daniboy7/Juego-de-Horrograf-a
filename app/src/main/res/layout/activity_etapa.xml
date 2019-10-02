@@ -22,14 +22,15 @@
         android:id="@+id/descripcionEtapa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
-        android:hint="Descripción" />
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:hint="Descripción"
+        />
 
     <EditText
         android:id="@+id/valorError"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Valor de error"
         android:inputType="numberDecimal"
          />
@@ -38,7 +39,7 @@
         android:id="@+id/valorPuntuacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Valor de puntuación"
         android:inputType="numberDecimal"
         />
@@ -47,7 +48,7 @@
         android:id="@+id/erroresNoPermitidos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Número de errores no permitidos"
         android:inputType="number" />
 
@@ -55,9 +56,18 @@
         android:id="@+id/minutos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Minutos"
         android:inputType="number" />
+
+    <EditText
+        android:id="@+id/numero_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:hint="Número de items"
+        android:inputType="number"
+        />
 
     <Button
         android:id="@+id/btnRegistroEtapa"
@@ -65,11 +75,20 @@
         android:layout_height="wrap_content"
         android:text="Registrar etapa"
         android:fontFamily="@font/luckiest_guy"
-        android:background="@drawable/boton1"
+        android:background="@drawable/custom_button1"
         android:textAlignment="center"
-        android:textColor="#800000"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
         />
 
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btnHome"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        app:cb_color="#2AF598"
+        app:cb_pressedRingWidth="16dp"
+        android:src="@drawable/ic_home_black_24dp"
+        />
 
 
 </LinearLayout>

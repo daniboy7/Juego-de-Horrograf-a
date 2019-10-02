@@ -16,8 +16,11 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import at.markushi.ui.CircleButton;
+
 
 public class Registro extends AppCompatActivity {
+    private CircleButton btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +68,16 @@ public class Registro extends AppCompatActivity {
                 RegistroRequest r = new RegistroRequest(usuario,contraseña,correo,nombre,apellidos,edad,tipo,respuesta);
                 RequestQueue cola = Volley.newRequestQueue(Registro.this);
                 cola.add(r);
+            }
+        });
+
+        btnLogin = (CircleButton)findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentLogin = new Intent(getApplicationContext(),MainActivity.class);
+                Registro.this.startActivity(intentLogin);
+                Registro.this.finish();
             }
         });
     }

@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView registro = (TextView)findViewById(R.id.registroLogin);
+        TextView restablecer = (TextView)findViewById(R.id.restablecerPassword);
+        TextView acercade = (TextView)findViewById(R.id.about);
         Button btnLogin = (Button)findViewById(R.id.btnLogin);
         final EditText usuarioT = (EditText)findViewById(R.id.usuarioLogin);
         final EditText contraseñaT = (EditText)findViewById(R.id.passwordLogin);
@@ -82,6 +84,24 @@ public class MainActivity extends AppCompatActivity {
                     RequestQueue cola = Volley.newRequestQueue(MainActivity.this);
                     cola.add(r);
                 }
+        });
+
+        restablecer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent restablecerPassword = new Intent(MainActivity.this,restartPassword.class);
+                MainActivity.this.startActivity(restablecerPassword);
+                MainActivity.this.finish();
+            }
+        });
+
+        acercade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentAbout = new Intent(MainActivity.this,About.class);
+                MainActivity.this.startActivity(intentAbout);
+                MainActivity.this.finish();
+            }
         });
     }
 }

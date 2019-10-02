@@ -23,14 +23,14 @@
         android:id="@+id/usuarioRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Usuario" />
 
     <EditText
         android:id="@+id/passwordRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Contraseña"
         android:inputType="textPassword" />
 
@@ -38,7 +38,7 @@
         android:id="@+id/correoRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Correo"
         android:inputType="textEmailAddress" />
 
@@ -46,21 +46,21 @@
         android:id="@+id/nombreRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Nombre" />
 
     <EditText
         android:id="@+id/apellidosRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Apellidos" />
 
     <EditText
         android:id="@+id/edadRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:ems="10"
         android:hint="Edad"
         android:inputType="number" />
@@ -71,9 +71,19 @@
         android:layout_height="wrap_content"
         android:text="Regístrate"
         android:fontFamily="@font/luckiest_guy"
-        android:background="@drawable/boton1"
+        android:background="@drawable/custom_button1"
         android:textAlignment="center"
-        android:textColor="#800000"
+        android:textColor="#FFFFFF"
+        android:layout_margin="20dp"
+        />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btnLogin"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        app:cb_color="#2AF598"
+        app:cb_pressedRingWidth="16dp"
+        android:src="@drawable/ic_keyboard_return_black_24dp"
         />
 
 

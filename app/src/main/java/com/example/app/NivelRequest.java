@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NivelRequest extends StringRequest {
-    private static  final String ruta ="http://horrografia.000webhostapp.com/registroNivel.php";
+    private static  final String ruta ="http://horrography.000webhostapp.com/registroNivel.php";
     private Map<String,String> parametros;
     public NivelRequest(String descripcion, Response.Listener<String> listener)
     {

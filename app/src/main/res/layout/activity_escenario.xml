@@ -22,8 +22,20 @@
                 android:id="@+id/bgBird"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/background"
                 >
+
+                <ImageView
+                    android:id="@+id/background_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/landscape"
+                    />
+                <ImageView
+                    android:id="@+id/background_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/landscape"
+                    />
 
                 <ImageView
                     android:id="@+id/bird"
@@ -40,6 +52,24 @@
                     android:id="@+id/ape"
                     android:layout_width="60dp"
                     android:layout_height="60dp" />
+
+                <ImageView
+                    android:id="@+id/coin"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    />
+                <ImageView
+                    android:id="@+id/tree"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/tree"
+                    />
+                <ImageView
+                    android:id="@+id/apple"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/apple"
+                    />
 
             </RelativeLayout>
 
@@ -93,9 +123,14 @@
                     android:layout_height="wrap_content"
                     android:text="RIGHT APE"
                     />
+
+
             </LinearLayout>
 
+
         </LinearLayout>
+
+
     </ScrollView>
 
 </LinearLayout>

@@ -16,9 +16,9 @@ public class Home extends AppCompatActivity {
 
         final TextView mensaje = (TextView)findViewById(R.id.mensaje);
         Intent i = this.getIntent();
-        String nombre = i.getStringExtra("nombre");
+        final String nombre = i.getStringExtra("nombre");
         int edad = i.getIntExtra("edad",-1);
-        mensaje.setText(mensaje.getText()+" "+nombre+ " Su edad:"+edad+"");
+        mensaje.setText(mensaje.getText()+" "+nombre);
 
         Button salir = findViewById(R.id.btnSalir);
         salir.setOnClickListener(new View.OnClickListener() {
@@ -34,20 +34,34 @@ public class Home extends AppCompatActivity {
         jugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentJugar = new Intent(Home.this,Juego.class);
+                Intent intentJugar = new Intent(Home.this,IniciarPartida.class);
+                intentJugar.putExtra("nombre",nombre);
                 Home.this.startActivity(intentJugar);
                 Home.this.finish();
             }
         });
 
-        Button saber = findViewById(R.id.btnSaber);
-        saber.setOnClickListener(new View.OnClickListener() {
+        Button top = findViewById(R.id.btnTop);
+        top.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentSaber = new Intent(Home.this, Escenario.class);
-                Home.this.startActivity(intentSaber);
+                Intent intentTop = new Intent(Home.this,Top.class);
+                intentTop.putExtra("nombre",nombre);
+                Home.this.startActivity(intentTop);
                 Home.this.finish();
             }
         });
+
+        Button actualizar = findViewById(R.id.btnActualizar);
+        actualizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentActualizar = new Intent(Home.this,ActualizarUsuario.class);
+                intentActualizar.putExtra("nombre",nombre);
+                Home.this.startActivity(intentActualizar);
+                Home.this.finish();
+            }
+        });
+
     }
 }

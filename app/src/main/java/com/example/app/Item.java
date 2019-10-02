@@ -2,8 +2,9 @@ package com.example.app;
 
 public class Item {
     private int id;
-    private String frase;
-    private String frase_correcta;
+    private String texto_item;
+    private String forma_correcta;
+    private String pista;
     private int nivel;
     private String descripcion_nivel;
     private int etapa;
@@ -12,16 +13,17 @@ public class Item {
     private Double valor_puntuacion;
     private int errores_no_permitidos;
     private int minutos;
+    private int numero_items;
 
     public Item(){
 
     }
 
-    public Item(int id, String frase, String frase_correcta, int nivel, String descripcion_nivel, int etapa, String descripcion_etapa,
-                Double valor_error, Double valor_puntuacion, int errores_no_permitidos, int minutos) {
+    public Item(int id, String texto_item, String forma_correcta, String pista, int nivel, String descripcion_nivel, int etapa, String descripcion_etapa, Double valor_error, Double valor_puntuacion, int errores_no_permitidos, int minutos, int numero_items) {
         this.id = id;
-        this.frase = frase;
-        this.frase_correcta = frase_correcta;
+        this.texto_item = texto_item;
+        this.forma_correcta = forma_correcta;
+        this.pista = pista;
         this.nivel = nivel;
         this.descripcion_nivel = descripcion_nivel;
         this.etapa = etapa;
@@ -30,7 +32,9 @@ public class Item {
         this.valor_puntuacion = valor_puntuacion;
         this.errores_no_permitidos = errores_no_permitidos;
         this.minutos = minutos;
+        this.numero_items = numero_items;
     }
+
 
     public int getId() {
         return id;
@@ -40,20 +44,28 @@ public class Item {
         this.id = id;
     }
 
-    public String getFrase() {
-        return frase;
+    public String getTexto_item() {
+        return texto_item;
     }
 
-    public void setFrase(String frase) {
-        this.frase = frase;
+    public void setTexto_item(String texto_item) {
+        this.texto_item = texto_item;
     }
 
-    public String getFrase_correcta() {
-        return frase_correcta;
+    public String getForma_correcta() {
+        return forma_correcta;
     }
 
-    public void setFrase_correcta(String frase_correcta) {
-        this.frase_correcta = frase_correcta;
+    public void setForma_correcta(String forma_correcta) {
+        this.forma_correcta = forma_correcta;
+    }
+
+    public String getPista() {
+        return pista;
+    }
+
+    public void setPista(String pista) {
+        this.pista = pista;
     }
 
     public int getNivel() {
@@ -118,5 +130,13 @@ public class Item {
 
     public void setMinutos(int minutos) {
         this.minutos = minutos;
+    }
+
+    public int getNumero_items() {
+        return numero_items;
+    }
+
+    public void setNumero_items(int numero_items) {
+        this.numero_items = numero_items;
     }
 }

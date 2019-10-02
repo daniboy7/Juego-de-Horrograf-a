@@ -26,41 +26,55 @@
                 android:layout_margin="20dp"
                 android:textAlignment="center"
                 app:fontFamily="@font/luckiest_guy"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ingrese la frase :"
-                android:textColor="#000000"
+                android:text="Ingrese el item :"
+                android:textColor="#FFFFFF"
                 android:textSize="15dp"
                 android:layout_margin="20dp"
                 android:fontFamily="@font/luckiest_guy"
                 />
             <EditText
-                android:id="@+id/frase"
+                android:id="@+id/texto_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
-                android:lines="5"
+                android:fontFamily="@font/gentium_book_basic_bold"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ingrese la frase correcta :"
-                android:textColor="#000000"
+                android:text="Ingrese la forma correcta:"
+                android:textColor="#FFFFFF"
                 android:textSize="15dp"
                 android:layout_margin="20dp"
                 android:fontFamily="@font/luckiest_guy"
                 />
             <EditText
-                android:id="@+id/fraseCorrecta"
+                android:id="@+id/forma_correcta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
-                android:lines="5"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese la pista :"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/luckiest_guy"
+                />
+            <EditText
+                android:id="@+id/pista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gentium_book_basic_bold"
                 />
 
             <TextView
@@ -68,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Seleccione el nivel:"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="15dp"
                 android:layout_margin="20dp"
                 android:fontFamily="@font/luckiest_guy"
@@ -86,7 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Seleccione la etapa:"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="15dp"
                 android:layout_margin="20dp"
                 android:fontFamily="@font/luckiest_guy"
@@ -105,9 +119,19 @@
                 android:layout_height="wrap_content"
                 android:text="Crear"
                 android:fontFamily="@font/luckiest_guy"
-                android:background="@drawable/boton1"
+                android:background="@drawable/custom_button1"
                 android:textAlignment="center"
-                android:textColor="#800000"
+                android:textColor="#FFFFFF"
+                android:layout_margin="20dp"
+                />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/btnHome"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                app:cb_color="#2AF598"
+                app:cb_pressedRingWidth="16dp"
+                android:src="@drawable/ic_home_black_24dp"
                 />
 
 

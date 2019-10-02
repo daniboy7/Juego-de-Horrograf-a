@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegistroAdministradorRequest extends StringRequest {
-    private static  final String ruta ="http://horrografia.000webhostapp.com/registro.php";
+    private static  final String ruta ="http://horrography.000webhostapp.com/registro.php";
     private Map<String,String> parametros;
     public RegistroAdministradorRequest(String usuario, String contraseña, String correo, String nombre, String apellidos, int edad, String tipo, Response.Listener<String> listener)
     {

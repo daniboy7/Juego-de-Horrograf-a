@@ -25,7 +25,7 @@
         android:id="@+id/descripcionNivel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Descripción" />
 
 
@@ -36,11 +36,20 @@
         android:layout_height="wrap_content"
         android:text="Registrar"
         android:fontFamily="@font/luckiest_guy"
-        android:background="@drawable/boton1"
+        android:background="@drawable/custom_button1"
         android:textAlignment="center"
-        android:textColor="#800000"
+        android:textColor="#FFFFFF"
+        android:layout_margin="20dp"
         />
 
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btnHome"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        app:cb_color="#2AF598"
+        app:cb_pressedRingWidth="16dp"
+        android:src="@drawable/ic_home_black_24dp"
+        />
 
 
 </LinearLayout>

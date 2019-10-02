@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal"
+    tools:context=".PartidaNivel3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/bgEscenario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/background_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/landscape"
+                    />
+                <ImageView
+                    android:id="@+id/background_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/landscape"
+                    />
+
+                <ImageView
+                    android:id="@+id/red_bird"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/fruit1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/mango"
+                    />
+                <ImageView
+                    android:id="@+id/fruit2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/mango"
+                    />
+                <ImageView
+                    android:id="@+id/fruit3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/mango"
+                    />
+                <ImageView
+                    android:id="@+id/fruit4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/mango"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iconoPuntuacion"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/completo"
+                        android:layout_alignBottom ="@+id/puntuacion"
+                        />
+
+                    <TextView
+                        android:id="@+id/puntuacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_toRightOf="@+id/iconoPuntuacion"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="60dp"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/iconoReloj"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/reloj"
+                        android:layout_alignLeft ="@+id/tiempo"
+                        />
+
+                    <TextView
+                        android:id="@+id/tiempo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/luckiest_guy"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_margin="20dp"
+                        android:layout_toRightOf="@+id/iconoPuntuacion"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iconoErrores"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/errores"
+                        android:layout_alignLeft ="@+id/errores"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/errores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_toRightOf="@+id/iconoErrores"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="80dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/itemCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/luckiest_guy"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_toRightOf="@+id/iconoErrores"
+                        android:layout_margin="20dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textviewNivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:text=""
+                app:fontFamily="@font/luckiest_guy"
+                android:textColor="#FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/textviewTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:text=""
+                app:fontFamily="@font/luckiest_guy"
+                android:textColor="#FFFFFF"
+                />
+            <TextView
+                android:id="@+id/textoItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:text=""
+                app:fontFamily="@font/gentium_book_basic_bold"
+                android:textColor="#FFFFFF"
+                />
+
+            <EditText
+                android:id="@+id/texto_respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnConfirmNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:fontFamily="@font/luckiest_guy"
+                    android:text="Iniciar"
+                    android:textColor="#2AF598"
+                    android:background="@drawable/custom_button3"
+                    />
+
+                <Button
+                    android:id="@+id/clue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin ="20dp"
+                    android:text="Pista"
+                    app:fontFamily="@font/luckiest_guy"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/custom_button2"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/boy1"
+        android:duration="100"/>
+    <item android:drawable="@drawable/boy2"
+        android:duration="100"/>
+    <item android:drawable="@drawable/boy3"
+        android:duration="100"/>
+    <item android:drawable="@drawable/boy4"
+        android:duration="100"/>
+    <item android:drawable="@drawable/boy5"
+        android:duration="100"/>
+    <item android:drawable="@drawable/boy6"
+        android:duration="100"/>
+    <item android:drawable="@drawable/boy7"
+        android:duration="100"/>
+    <item android:drawable="@drawable/boy8"
+        android:duration="100"/>
+</animation-list>

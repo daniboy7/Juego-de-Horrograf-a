@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal"
+    tools:context=".IniciarPartida">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_margin="20dp"
+        android:text="Horrografía"
+        android:textAlignment="center"
+        android:textColor="#FFFF00"
+        app:fontFamily="@font/luckiest_guy"
+        />
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Bienvenido usuario:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:fontFamily="@font/luckiest_guy" />
+
+    <TextView
+        android:id="@+id/tvnivelPartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione el nivel:"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/luckiest_guy"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/spNivelPartida"
+        ></Spinner>
+
+    <Button
+        android:id="@+id/btnIniciarPartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar partida"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button1"
+        android:textAlignment="center"
+        android:layout_margin="24dp"
+        android:fontFamily="@font/luckiest_guy"
+        />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btnHome"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        app:cb_color="#2AF598"
+        app:cb_pressedRingWidth="16dp"
+        android:src="@drawable/ic_home_black_24dp"
+        />
+
+</LinearLayout>

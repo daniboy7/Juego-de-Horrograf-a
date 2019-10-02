@@ -15,8 +15,7 @@
         android:layout_margin="20dp"
         android:text="Horrografía"
         android:textAlignment="center"
-        android:textColor="#FFFF00"
-        android:background="@drawable/panel"
+        android:textColor="#FFFFFF"
         app:fontFamily="@font/luckiest_guy"
         />
 
@@ -37,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Usuario"
         />
 
@@ -47,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:fontFamily="@font/luckiest_guy"
+        android:fontFamily="@font/gentium_book_basic_bold"
         android:hint="Contraseña"
         android:inputType="textPassword" />
 
@@ -58,9 +57,9 @@
         android:layout_margin="20dp"
         android:text="Ingresar"
         android:fontFamily="@font/luckiest_guy"
-        android:background="@drawable/boton1"
+        android:background="@drawable/custom_button1"
         android:textAlignment="center"
-        android:textColor="#800000"
+        android:textColor="#FFFFFF"
         />
 
     <TextView
@@ -74,6 +73,28 @@
         android:textColor="#FFFFFF"
         />
 
+    <TextView
+        android:id="@+id/restablecerPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restablecer contraseña"
+        android:textAlignment="center"
+        app:fontFamily="@font/luckiest_guy"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textColor="#FFFFFF"
+        />
 
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acerca de"
+        android:textAlignment="center"
+        android:fontFamily="@font/luckiest_guy"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textColor="#FFFFFF"
+        />
 
 </LinearLayout>

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AdministradorHome extends AppCompatActivity {
 
@@ -15,16 +16,18 @@ public class AdministradorHome extends AppCompatActivity {
         setContentView(R.layout.activity_administrador_home);
 
         final TextView mensaje = (TextView)findViewById(R.id.mensaje);
+
         Intent i = this.getIntent();
-        String nombre = i.getStringExtra("nombre");
+        final String nombre = i.getStringExtra("nombre");
         int edad = i.getIntExtra("edad",-1);
-        mensaje.setText(mensaje.getText()+" "+nombre+ " Su edad:"+edad+"");
+        mensaje.setText(mensaje.getText()+" "+nombre);
 
         Button nivel = findViewById(R.id.btnNivel);
         nivel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentNivel = new Intent(AdministradorHome.this,Nivel.class);
+                intentNivel.putExtra("nombre",nombre);
                 AdministradorHome.this.startActivity(intentNivel);
                 AdministradorHome.this.finish();
             }
@@ -45,6 +48,7 @@ public class AdministradorHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intentRegistro = new Intent(AdministradorHome.this,RegistroAdministrador.class);
+                intentRegistro.putExtra("nombre",nombre);
                 AdministradorHome.this.startActivity(intentRegistro);
                 AdministradorHome.this.finish();
             }
@@ -55,6 +59,7 @@ public class AdministradorHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intentEtapa = new Intent(AdministradorHome.this,Etapa.class);
+                intentEtapa.putExtra("nombre",nombre);
                 AdministradorHome.this.startActivity(intentEtapa);
                 AdministradorHome.this.finish();
             }
@@ -65,11 +70,34 @@ public class AdministradorHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intentItem = new Intent(AdministradorHome.this, CrearItem.class);
+                intentItem.putExtra("nombre",nombre);
                 AdministradorHome.this.startActivity(intentItem);
                 AdministradorHome.this.finish();
             }
         });
 
+        Button estadisticas = findViewById(R.id.btnEstadisticasErrores);
+        estadisticas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentEstadisticasErrores = new Intent(AdministradorHome.this,EstadisticasErrores.class);
+                intentEstadisticasErrores.putExtra("nombre",nombre);
+                AdministradorHome.this.startActivity(intentEstadisticasErrores);
+                AdministradorHome.this.finish();
+            }
+        });
+
+        Button graficos = findViewById(R.id.btnEstadisticasAciertos);
+        graficos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Porcentaje de aciertos",Toast.LENGTH_LONG).show();
+                Intent intentEstadisticasAciertos = new Intent(AdministradorHome.this,EstadisticasAciertos.class);
+                intentEstadisticasAciertos.putExtra("nombre",nombre);
+                AdministradorHome.this.startActivity(intentEstadisticasAciertos);
+                AdministradorHome.this.finish();
+            }
+        });
 
 
     }

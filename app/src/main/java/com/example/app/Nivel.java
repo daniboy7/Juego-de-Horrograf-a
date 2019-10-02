@@ -15,12 +15,19 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import at.markushi.ui.CircleButton;
+
 public class Nivel extends AppCompatActivity {
+    private CircleButton btnhome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nivel);
+
+        Intent i = this.getIntent();
+        final String nombre = i.getStringExtra("nombre");
+
         final EditText descripcionT = (EditText)findViewById(R.id.descripcionNivel);
 
         Button btnRegistroNivel = (Button)findViewById(R.id.btnRegistroNivel);
@@ -37,6 +44,7 @@ public class Nivel extends AppCompatActivity {
                             boolean ok = jsonRespuesta.getBoolean("success");
                             if(ok == true){
                                 Intent i = new Intent(Nivel.this, AdministradorHome.class);
+                                i.putExtra("nombre",nombre);
                                 Nivel.this.startActivity(i);
                                 Nivel.this.finish();
                             }
@@ -52,6 +60,17 @@ public class Nivel extends AppCompatActivity {
                 NivelRequest r = new NivelRequest(descripcion, respuesta);
                 RequestQueue cola = Volley.newRequestQueue(Nivel.this);
                 cola.add(r);
+            }
+        });
+
+        btnhome = (CircleButton)findViewById(R.id.btnHome);
+        btnhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent administradorhome = new Intent(getApplicationContext(),AdministradorHome.class);
+                administradorhome.putExtra("nombre",nombre);
+                Nivel.this.startActivity(administradorhome);
+                Nivel.this.finish();
             }
         });
     }

@@ -1,6 +1,9 @@
 package com.example.app;
 
 
+import android.animation.ValueAnimator;
+import android.content.Intent;
+import android.graphics.Matrix;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -8,9 +11,11 @@ import android.os.Bundle;
 
 import android.view.View;
 
+import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import java.util.Timer;
 
@@ -19,9 +24,16 @@ import java.util.Timer;
 public class Escenario extends AppCompatActivity {
     RelativeLayout frame;
 
+    private ImageView backgroundOne;
+    private ImageView backgroundTwo;
+
+    private ImageView tree;
     private ImageView bird;
     private ImageView star;
     private ImageView ape;
+    private ImageView coin;
+    private ImageView apple;
+
     private Button up;
     private Button down;
     private Button left;
@@ -45,6 +57,10 @@ public class Escenario extends AppCompatActivity {
     private int apeX;
     private int apeY;
 
+    //Position apple
+    private int appleY;
+    private int appleX;
+
     //Initialize class
     private Handler handler = new Handler();
     private Timer timer = new Timer();
@@ -52,6 +68,7 @@ public class Escenario extends AppCompatActivity {
     AnimationDrawable flapping;
     AnimationDrawable animationStar;
     AnimationDrawable walkingape;
+    AnimationDrawable animationCoins;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +83,9 @@ public class Escenario extends AppCompatActivity {
         rightape = (Button)findViewById(R.id.btnRightApe);
 
 
-        frame = (RelativeLayout)findViewById(R.id.bgBird);
+        frame = (RelativeLayout) findViewById(R.id.bgBird);
+
+
 
         bird = (ImageView)findViewById(R.id.bird);
         bird.setBackgroundResource(R.drawable.flappingwings);
@@ -95,6 +114,21 @@ public class Escenario extends AppCompatActivity {
         apeY= 800;
         ape.setX(apeX);
         ape.setY(apeY);
+
+
+        coin = (ImageView)findViewById(R.id.coin);
+        coin.setBackgroundResource(R.drawable.animationcoins);
+        animationCoins = (AnimationDrawable)coin.getBackground();
+        animationCoins.start();
+
+        coin.setX(600);
+        coin.setY(700);
+
+        apple = (ImageView)findViewById(R.id.apple);
+        appleX = 300;
+        appleY = 300;
+        apple.setX(appleX);
+        apple.setY(appleY);
 
         leftape.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,6 +184,32 @@ public class Escenario extends AppCompatActivity {
             }
         });
 
+
+        backgroundOne = (ImageView) findViewById(R.id.background_one);
+        backgroundTwo = (ImageView) findViewById(R.id.background_two);
+
+        final ValueAnimator animator = ValueAnimator.ofFloat(0.0f, 1.0f);
+        animator.setRepeatCount(ValueAnimator.INFINITE);
+        animator.setInterpolator(new LinearInterpolator());
+        animator.setDuration(10000L);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                final float progress = (float)valueAnimator.getAnimatedValue();
+                final float width = backgroundOne.getWidth();
+                final float translationX = width * progress;
+                backgroundOne.setTranslationX(translationX);
+                backgroundTwo.setTranslationX(translationX - width);
+            }
+        });
+        animator.start();
+
+        tree = (ImageView)findViewById(R.id.tree);
+        tree.setX(600);
+        tree.setY(500);
+
+
+
     }
 
     private void checkApePosition() {
@@ -167,6 +227,10 @@ public class Escenario extends AppCompatActivity {
         birdHeightSize = bird.getHeight();
         birdWidthSize = bird.getWidth();
 
+        if (birdCollision(appleX,appleY)){
+            Toast.makeText(Escenario.this,"Colisión",Toast.LENGTH_SHORT).show();
+            apple.setVisibility(View.INVISIBLE);
+        }
         if (birdY < 0)
             birdY = 0;
         if (birdY > frameHeight - birdHeightSize)
@@ -177,5 +241,11 @@ public class Escenario extends AppCompatActivity {
             birdX = frameWidth - birdWidthSize;
     }
 
+    private boolean birdCollision(int x,int y){
+        if(birdX < x && x < (birdX+ bird.getWidth()) && birdY < y && y < (birdY + bird.getHeight())){
+            return true;
+        }
+        return false;
+    }
 
 }

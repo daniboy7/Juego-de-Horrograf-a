@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/carter_one</item>
+        <item>@font/gentium_book_basic_bold</item>
+        <item>@font/goudy_bookletter_1911</item>
         <item>@font/luckiest_guy</item>
+        <item>@font/raleway_thin</item>
     </array>
 </resources>

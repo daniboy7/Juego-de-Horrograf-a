@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal"
+    tools:context=".GameOver">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Juego terminado"
+        android:textSize="20dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:text="Tu puntuación: "
+        />
+
+    <TextView
+        android:id="@+id/textoPuntuacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:textColor="#FFFFFF"
+        android:text=""
+        />
+
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button3"
+        android:layout_margin="50dp"
+        android:text="Continuar"
+        android:fontFamily="@font/luckiest_guy"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#2AF598"
+        />
+
+</LinearLayout>

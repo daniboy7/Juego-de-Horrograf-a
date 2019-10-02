@@ -26,7 +26,6 @@
         android:text="Horrografía"
         android:textAlignment="center"
         android:textColor="#FFFF00"
-        android:background="@drawable/panel"
         app:fontFamily="@font/luckiest_guy"
         />
 
@@ -45,10 +44,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Crear nivel"
-        android:textColor="#800000"
-        android:background="@drawable/boton1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button2"
         android:textAlignment="center"
-
+        android:layout_margin="10dp"
         android:fontFamily="@font/luckiest_guy"
         />
 
@@ -57,10 +56,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Crear etapa"
-        android:textColor="#800000"
-        android:background="@drawable/boton1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button2"
         android:textAlignment="center"
-
+        android:layout_margin="10dp"
         android:fontFamily="@font/luckiest_guy"
         />
 
@@ -69,10 +68,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Crear item"
-        android:textColor="#800000"
-        android:background="@drawable/boton1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button2"
         android:textAlignment="center"
         android:fontFamily="@font/luckiest_guy"
+        android:layout_margin="10dp"
         />
 
     <Button
@@ -80,35 +80,48 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registrar administrador"
-        android:textColor="#800000"
-        android:background="@drawable/boton1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button2"
         android:textAlignment="center"
-
+        android:layout_margin="10dp"
         android:fontFamily="@font/luckiest_guy"
         />
 
     <Button
-        android:id="@+id/btnEstadisticas"
+        android:id="@+id/btnEstadisticasErrores"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Estadísticas"
-        android:textColor="#800000"
-        android:background="@drawable/boton1"
+        android:text="Estadísticas de errores"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button2"
         android:textAlignment="center"
-
+        android:layout_margin="10dp"
         android:fontFamily="@font/luckiest_guy"
         />
+
+            <Button
+                android:id="@+id/btnEstadisticasAciertos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estadísticas de aciertos"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/custom_button2"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/luckiest_guy"
+                />
 
     <Button
         android:id="@+id/btnSalir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salir"
-        android:background="@drawable/boton3"
         android:textAlignment="center"
-
         android:fontFamily="@font/luckiest_guy"
-        android:textColor="#000000"/>
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button2"
+        />
 
         </LinearLayout>
 

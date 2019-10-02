@@ -16,7 +16,6 @@
         android:text="Horrografía"
         android:textAlignment="center"
         android:textColor="#FFFF00"
-        android:background="@drawable/panel"
         app:fontFamily="@font/luckiest_guy"
         />
 
@@ -36,32 +35,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Jugar"
-        android:textColor="#800000"
-        android:background="@drawable/boton1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button2"
         android:textAlignment="center"
         android:layout_margin="24dp"
         android:fontFamily="@font/luckiest_guy"
         />
+
+
     <Button
-        android:id="@+id/btnSaber"
+        android:id="@+id/btnTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFF00"
-        android:text="Saber más"
-        android:background="@drawable/boton2"
+        android:textColor="#FFFFFF"
+        android:text="Top"
+        android:background="@drawable/custom_button2"
         android:textAlignment="center"
         android:layout_margin="24dp"
         android:fontFamily="@font/luckiest_guy"/>
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Actualizar datos personales"
+        android:background="@drawable/custom_button2"
+        android:textAlignment="center"
+        android:layout_margin="24dp"
+        android:fontFamily="@font/luckiest_guy"
+        />
+
     <Button
         android:id="@+id/btnSalir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salir"
-        android:background="@drawable/boton3"
+        android:background="@drawable/custom_button2"
         android:textAlignment="center"
         android:layout_margin="24dp"
         android:fontFamily="@font/luckiest_guy"
-        android:textColor="#000000"/>
+        android:textColor="#FFFFFF"/>
 
 
 

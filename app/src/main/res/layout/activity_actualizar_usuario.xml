@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal"
+    tools:context=".ActualizarUsuario">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar datos personales"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        app:fontFamily="@font/luckiest_guy"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:hint="Usuario" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:hint="Contraseña"
+        />
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:hint="Correo"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/apellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:hint="Apellidos" />
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luckiest_guy"
+        android:background="@drawable/custom_button1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_margin="20dp"
+        android:text="Consultar"
+        />
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luckiest_guy"
+        android:background="@drawable/custom_button1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_margin="20dp"
+        android:text="Actualizar"
+        />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btnHome"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        app:cb_color="#2AF598"
+        app:cb_pressedRingWidth="16dp"
+        android:src="@drawable/ic_home_black_24dp"
+        />
+
+</LinearLayout>
