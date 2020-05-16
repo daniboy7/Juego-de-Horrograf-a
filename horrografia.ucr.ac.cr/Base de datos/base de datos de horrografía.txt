@@ -1,0 +1,47 @@
+create table usuarios (
+id_usuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+usuario VARCHAR(255) NOT NULL, 
+contraseña VARCHAR(255) NOT NULL, 
+correo VARCHAR(255) NOT NULL, 
+nombre VARCHAR(255) NOT NULL, 
+apellidos VARCHAR(255) NOT NULL,
+edad INT NOT NULL,
+tipo VARCHAR(20) NOT NULL
+);
+
+create table niveles (
+id_nivel INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+descripcion VARCHAR(255) NOT NULL
+);
+
+create table etapas (
+id_etapa INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+descripcion VARCHAR(255) NOT NULL,
+valor_error DOUBLE NOT NULL,
+valor_puntuacion DOUBLE NOT NULL,
+errores_no_permitidos INT NOT NULL,
+minutos INT NOT NULL,
+numero_items INT NOT NULL
+);
+
+CREATE TABLE items ( 
+id_item INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+texto_item TEXT NOT NULL,
+forma_correcta TEXT NOT NULL,
+pista TEXT ,
+etapa INT NOT NULL,
+ nivel INT NOT NULL, 
+FOREIGN KEY(nivel) REFERENCES niveles(id_nivel),
+ FOREIGN KEY(etapa) REFERENCES etapas(id_etapa) );
+
+create table partidas (
+id_partida INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+usuario VARCHAR(255),
+fecha DATE NOT NULL,
+nivel INT NOT NULL,
+estado VARCHAR(20) NOT NULL,
+puntuacion DOUBLE,
+errores INT,
+aciertos INT,
+FOREIGN KEY(nivel) REFERENCES niveles(id_nivel)
+);

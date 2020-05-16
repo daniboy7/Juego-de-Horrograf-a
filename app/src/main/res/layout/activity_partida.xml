@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/teal"
-    tools:context=".Partida">
+    tools:context="apps.ejemplo.horrografia.Partida">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -202,6 +202,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:hint="Escriba la forma correcta"
+                />
+            <TextView
+                android:id="@+id/texto_forma_correcta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:text=""
                 android:fontFamily="@font/gentium_book_basic_bold"
                 />
 

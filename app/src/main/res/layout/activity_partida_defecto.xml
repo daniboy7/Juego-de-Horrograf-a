@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/teal"
-    tools:context=".PartidaDefecto">
+    tools:context="apps.ejemplo.horrografia.PartidaDefecto">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -36,34 +36,34 @@
                     />
 
                 <ImageView
-                    android:id="@+id/boy"
+                    android:id="@+id/chicken"
                     android:layout_width="60dp"
                     android:layout_height="60dp" />
                 <ImageView
                     android:id="@+id/snack1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/snack"
+                    android:background="@drawable/grape"
                     />
                 <ImageView
                     android:id="@+id/snack2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/snack"
+                    android:background="@drawable/grape"
                     />
 
                 <ImageView
                     android:id="@+id/snack3"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/snack"
+                    android:background="@drawable/grape"
                     />
 
                 <ImageView
                     android:id="@+id/snack4"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/snack"
+                    android:background="@drawable/grape"
                     />
 
                 <LinearLayout
@@ -203,6 +203,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                />
+
+            <TextView
+                android:id="@+id/texto_forma_correcta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:text=""
                 android:fontFamily="@font/gentium_book_basic_bold"
                 />
 

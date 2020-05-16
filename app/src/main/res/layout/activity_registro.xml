@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/teal"
-    tools:context=".Registro">
+    tools:context="apps.ejemplo.horrografia.Registro">
 
     <TextView
         android:layout_width="match_parent"
@@ -69,7 +69,7 @@
         android:id="@+id/btnRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Regístrate"
+        android:text="Regístrese"
         android:fontFamily="@font/luckiest_guy"
         android:background="@drawable/custom_button1"
         android:textAlignment="center"

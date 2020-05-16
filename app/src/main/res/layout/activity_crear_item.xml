@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/teal"
-    tools:context=".CrearItem">
+    tools:context="apps.ejemplo.horrografia.CrearItem">
 
     <ScrollView
         android:layout_width="match_parent"

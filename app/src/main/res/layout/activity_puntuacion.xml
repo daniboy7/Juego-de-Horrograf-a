@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/teal"
-    tools:context=".Puntuacion">
+    tools:context="apps.ejemplo.horrografia.Puntuacion">
 
 
     <ImageView
@@ -34,7 +34,7 @@
         android:fontFamily="@font/luckiest_guy"
         android:gravity="center_horizontal"
         android:textColor="#FFFFFF"
-        android:text="Tu puntuación: "
+        android:text="Su puntuación: "
         />
 
     <TextView

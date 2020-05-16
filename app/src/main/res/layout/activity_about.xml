@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/teal"
-    tools:context=".About">
+    tools:context="apps.ejemplo.horrografia.About">
 
     <com.tomer.fadingtextview.FadingTextView
         android:id="@+id/fading_text_view"

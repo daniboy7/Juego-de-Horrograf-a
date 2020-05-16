@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/teal"
-    tools:context=".ActualizarUsuario">
+    tools:context="apps.ejemplo.horrografia.ActualizarUsuario">
 
     <TextView
         android:layout_width="match_parent"

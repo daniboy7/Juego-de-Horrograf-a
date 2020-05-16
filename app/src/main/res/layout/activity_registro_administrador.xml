@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/teal"
-    tools:context=".RegistroAdministrador">
+    tools:context="apps.ejemplo.horrografia.RegistroAdministrador">
 
     <TextView
         android:layout_width="match_parent"

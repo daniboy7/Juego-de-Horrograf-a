@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/teal"
-    tools:context=".IniciarPartida">
+    tools:context="apps.ejemplo.horrografia.IniciarPartida">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:layout_margin="20dp"
         android:text="Horrografía"
         android:textAlignment="center"
-        android:textColor="#FFFF00"
+        android:textColor="#FFFFFF"
         app:fontFamily="@font/luckiest_guy"
         />
     <TextView

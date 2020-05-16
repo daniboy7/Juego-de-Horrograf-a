@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EstadisticasErrores">
+    tools:context="apps.ejemplo.horrografia.EstadisticasErrores">
 
     <at.markushi.ui.CircleButton
         android:id="@+id/btnHome"
